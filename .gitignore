@@ -1,0 +1,48 @@
+# Dependencies and package-manager caches
+node_modules/
+.npm/
+.pnpm-store/
+
+# Nuxt / Nitro generated output and local storage
+.nuxt/
+.output/
+.nitro/
+.data/
+.cache/
+dist
+
+# Test reports and generated artifacts
+coverage/
+.nyc_output/
+playwright-report/
+playwright/.cache/
+test-results/
+blob-report/
+*.tsbuildinfo
+
+# Logs and process files
+logs/
+*.log
+*.pid
+*.pid.lock
+
+# Editor and operating-system files
+.idea/
+.fleet/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Local environment files (keep shareable examples)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local deployment state
+.wrangler/
+.vercel/
+.netlify/

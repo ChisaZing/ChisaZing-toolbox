@@ -1,0 +1,30 @@
+import { expect, it } from 'vitest'
+import { ClickSession, keyboardRows } from '../core/input'
+it('counts complete left clicks once and stops exactly at deadline', () => {
+  const s = new ClickSession(1)
+  s.down(0)
+  s.down(0)
+  expect(s.up(0, 100)).toBe(true)
+  expect(s.up(0, 101)).toBe(false)
+  expect(s.downs).toBe(1)
+  s.down(0)
+  expect(s.up(0, 1100)).toBe(false)
+  expect(s.count).toBe(1)
+  expect(s.cps).toBe(1)
+})
+it('ignores unmatched releases and non-left clicks, interrupts cleanly', () => {
+  const s = new ClickSession(5)
+  expect(s.up(0, 0)).toBe(false)
+  s.down(2)
+  s.up(2, 0)
+  expect(s.started).toBe(null)
+  s.down(0)
+  s.interrupt()
+  expect(s.up(0, 1)).toBe(false)
+})
+it('includes both physical shift keys and escape', () => {
+  const keys = keyboardRows().flat()
+  expect(keys).toContain('ShiftLeft')
+  expect(keys).toContain('ShiftRight')
+  expect(keys).toContain('Escape')
+})

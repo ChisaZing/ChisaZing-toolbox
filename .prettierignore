@@ -1,0 +1,13 @@
+node_modules/
+.nuxt/
+.output/
+.nitro/
+.data/
+.cache/
+dist/
+coverage/
+.idea/
+.git/
+.agents/
+.codex/
+package-lock.json
