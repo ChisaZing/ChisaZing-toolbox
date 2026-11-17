@@ -27,4 +27,4 @@
 
 如果有建议或发现问题，欢迎在本仓库的 **Issues** 中提出。
 
-项目将部署在 **GitHub Pages**。
+项目将部署在 **[GitHub Pages](https://chisazing.github.io/ChisaZing-toolbox/)**。

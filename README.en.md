@@ -27,4 +27,4 @@ The project has not been comprehensively tested. No guarantees are made regardin
 
 Suggestions and bug reports are welcome through this repository’s **Issues**.
 
-The project will be deployed on **GitHub Pages**.
+The project will be deployed on **[GitHub Pages](https://chisazing.github.io/ChisaZing-toolbox/)**.
