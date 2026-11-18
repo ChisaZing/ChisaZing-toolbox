@@ -28,3 +28,5 @@ The project has not been comprehensively tested. No guarantees are made regardin
 Suggestions and bug reports are welcome through this repository’s **Issues**.
 
 The project will be deployed on **[GitHub Pages](https://chisazing.github.io/ChisaZing-toolbox/)**.
+
+Cloudflare Web Analytics measures tool page visits and performance, not operation counts. Disabled in development; set `NUXT_ANALYTICS_DISABLED=true` when building to disable production analytics. Tool input, files and device reports are not attached to analytics events by this app.

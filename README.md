@@ -28,3 +28,5 @@
 如果有建议或发现问题，欢迎在本仓库的 **Issues** 中提出。
 
 项目将部署在 **[GitHub Pages](https://chisazing.github.io/ChisaZing-toolbox/)**。
+
+访问统计使用 Cloudflare Web Analytics，按页面路径统计各工具访问量及页面性能，不代表功能执行次数。开发环境不加载统计；生产构建可设置 `NUXT_ANALYTICS_DISABLED=true` 关闭。统计不会由本站附带发送工具输入、文件或设备报告。

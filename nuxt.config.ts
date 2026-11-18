@@ -31,6 +31,22 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
-    head: { meta: [{ name: 'robots', content: 'noindex,nofollow' }] },
+    head: {
+      meta: [{ name: 'robots', content: 'noindex,nofollow' }],
+      script:
+        process.env.NODE_ENV === 'production' && process.env.NUXT_ANALYTICS_DISABLED !== 'true'
+          ? [
+              {
+                key: 'cloudflare-web-analytics',
+                type: 'module',
+                src: 'https://static.cloudflareinsights.com/beacon.min.js',
+                'data-cf-beacon': JSON.stringify({
+                  token: 'bb31255b8dce4638b128b2a4a031b215',
+                  spa: true,
+                }),
+              },
+            ]
+          : [],
+    },
   },
 })

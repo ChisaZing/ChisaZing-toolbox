@@ -72,6 +72,13 @@ watch(
     {{
       en ? 'Preview · Files and input stay in your browser.' : '预览版 · 文件与输入仅在浏览器处理。'
     }}
+    <p class="text-xs mt-2">
+      {{
+        en
+          ? 'Cloudflare Web Analytics measures page visits and performance. Tool input, files and device reports are not included in analytics events.'
+          : '本站使用 Cloudflare Web Analytics 统计页面访问和性能，不将工具输入、文件或设备报告作为统计事件发送。'
+      }}
+    </p>
   </footer>
 </template>
 
